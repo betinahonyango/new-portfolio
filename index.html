@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betinah's Portfolio</title>
+    <link rel="stylesheet" href="src/portfolio.css">
+    <script src="https://kit.fontawesome.com/cc1f7caebb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" alt="Logo" class="logo">
+                <ul>
+                    <li><a href="#home"><strong>Home</strong></a></li>
+                    <li><a href="#about"><strong>About</strong></a></li>
+                    <li><a href="#services"><strong>Services</strong></a></li>
+                    <li><a href="#portfolio"><strong>Portfolio</strong></a></li>
+                    <li><a href="#contact"><strong>Contact</strong></a></li>
+                </ul>
+            </nav>
+            <div class="header-content">
+                <p>Data engineer | Full Stack Developer</p>
+                <h1 class="introduction">Hello, I'm <span class="name">Betinah Onyango</span> From Nairobi, Kenya</h1>
+            </div>
+        </div>
+    </div>
+    <!-------------------about------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                <img src="aboutme.png" alt="Betinah Onyango" class="about-img">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub">About Me</h1>
+                    <p>I'm a passionate software developer with a focus on building scalable web applications. I love working with modern technologies and continuously improving my skills.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span class="mini-subs">Data Engineering</span><br><span>Building data pipelines and ETL processes</span></li>
+                        <li><span class="mini-subs">Full Stack Development</span><br><span>Developing responsive web applications</span></li>
+                        <li><span class="mini-subs">Data Analysis</span><br><span>Analyzing data to drive business insights</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span class="mini-subs">June 2025 - Present</span><br><span>Data analytics and engineering Intern at Infotrace Analytics</span></li>
+                        <li><span class="mini-subs">February 2023 - August 2023</span><br><span>Finance and Analytics Intern at Molars Dental Practice Limited</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span class="mini-subs">August 2023 - Ongoing</span><br><span>Degree in Data Science and Analytics at Jomo Kenyatta University of Agriculture and Technology<br>Expected graduation 2027</span></li>
+                        <li><span class="mini-subs">January 2025</span><br><span>Web Development Bootcamp at SheCodes Foundation</span></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-------------------services------------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub">My Services</h1>
+                <div class="service-list">
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>Data Engineering</h2><br>
+                        <p>Designing and implementing data architectures to support scalable data solutions.</p>
+                            <a href="" style="color: #f76ceb;">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Full Stack Development</h2>
+                        <br>
+                        <p>Developing responsive and user-friendly web applications using modern technologies.</p>
+                            <a href="" style="color: #f76ceb;">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        <h2>Data Analysis</h2>
+                        <br>
+                        <p>Analyzing data to extract insights and support data-driven decision-making.</p>
+                            <a href="" style="color: #f76ceb;">Learn More</a>
+                    </div>
+                </div> 
+            </div> 
+        </div> 
+    </div>
+    <!-------------------portfolio------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub">My Portfolio</h1>
+           <div class="portfolio-list">
+                <div class="portfolio-item">
+                    <img src="data_enginering.jpg" alt="Data Engineering Project" class="portfolio-img1">
+                <div class="layer">
+                    <h3>Data Engineering Project</h3>
+                    <p>Developed a data pipeline to process and analyze large datasets using Python and SQL.</p>
+                    <a href="" style="color: #f76ceb;"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="web-development.jpg" alt="Full Stack Development Project" class="portfolio-img2">
+                <div class="layer">
+                    <h3>Full Stack Development Project</h3>
+                    <p>Created a responsive web application using React and Node.js.</p>
+                    <a href="" style="color: #f76ceb;"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="data_analysis.jpg" alt="Data Analysis Project" class="portfolio-img3">
+                <div class="layer">
+                    <h3>Data Analysis Project</h3>
+                    <p>Performed exploratory data analysis and visualization using Python and Tableau.</p>
+                    <a href="" style="color: #f76ceb;"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                </div>
+    <script src="src/portfolio.js"></script>
+</body>
+</html>
