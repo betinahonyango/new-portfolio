@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #080808;
+  color: #f4f4f4;
+}
+#header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("me_photo-removebg-preview.png");
+  background-size: 40%;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: flex-start;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+  padding: 10px 50px;
+  flex: 1;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 400px;
+}
+.logo {
+  width: 300px;
+  height: auto;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #f4f4f4;
+  font-size: 20px;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #63035b;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: width 0.3s ease;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header-content {
+  margin-top: 10%;
+  max-width: 600px;
+  font-size: larger;
+}
+.introduction {
+  font-size: 45px;
+  margin-top: 20px;
+}
+.name {
+  color: #b3449b;
+  font-weight: bold;
+}
+<!-------------about------------------- > #about {
+  padding: 80px 0;
+  color: #e3a9d6;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.about-col-1 {
+  flex-basis: 35%;
+}
+.about-col-1 img {
+  width: 100%;
+  border-radius: 20px;
+}
+.about-col-2 {
+  flex-basis: 60%;
+  padding-left: 30px;
+}
+.sub {
+  font-size: 60px;
+  font-weight: 600;
+  color: #f4f4f4;
+}
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #63035b;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: width 0.3s ease;
+}
+.tab-links.active-link::after {
+  width: 50%;
+}
+.tab-links:hover::after {
+  width: 100%;
+}
+.tab-contents ul li {
+  list-style: none;
+  margin: 15px 0;
+}
+.mini-subs {
+  font-size: 18px;
+  color: #b3449b;
+}
+.tab-contents {
+  display: none;
+}
+.tab-contents.active-tab {
+  display: block;
+}
+<!-------------services------------------- >
+ #services {
+  padding: 30px 0;
+}
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    grid-gap: 40px;      
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-width: 0; /* Prevent overflow */
+}
+.service-list div {
+  background: #262626;
+  padding: 20px;
+  font-size: 17px;
+  font-weight: 300;
+  border-radius: 15px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.service-list div i {
+  font-size: 50px;
+  color: #f76ceb;
+  margin-bottom: 20px;
+}
+.service-list div h2 {
+  font-size: 30px;
+  color: #f4f4f4;
+}
+.service-list div a {
+  text-decoration: none;
+  color: #f76ceb;
+  font-size: 15px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.service-list div:hover {
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+<!-------------------portfolio------------------->
+#portfolio {
+  padding: 50px 0;
+}
+.portfolio-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    margin-top: 40px;
+    align-items: stretch;
+    grid-gap: 60px;
+}
+
+.portfolio-list img {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+    display: block;
+}
+.portfolio-item {
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.layer {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #f4f4f4);
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+}
+.layer h3 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.layer a{
+   
+}
