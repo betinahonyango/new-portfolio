@@ -11,3 +11,11 @@ function opentab(tabname) {
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
 }
+
+function openMenu() {
+    document.getElementById("side-menu").style.right = "0";
+}
+
+function closeMenu() {
+    document.getElementById("side-menu").style.right = "-200px";
+}
