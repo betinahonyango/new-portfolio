@@ -13,18 +13,21 @@
         <div class="container">    
             <nav>
                 <img src="images/logo.png" alt="Logo" class="logo">
-                <ul>
+                <ul id="side-menu">
                     <li class="active"><a href="#home"><strong>Home</strong></a></li>
                     <li><a href="#about"><strong>About</strong></a></li>
                     <li><a href="#services"><strong>Services</strong></a></li>
                     <li><a href="#portfolio"><strong>Portfolio</strong></a></li>
                     <li><a href="#contact"><strong>Contact</strong></a></li>
+               <i class="fa-solid fa-xmark" id="close-icon" onclick="closeMenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" id="menu-icon" onclick="openMenu()"></i>
             </nav>
 
             <div class="header-content">
-                <p>Data engineer | Full Stack Developer</p>
-                <h1 class="introduction">Hello, I'm <span class="name">Betinah Onyango</span> From Nairobi, Kenya</h1>
+                <p class="title">Data engineer | Full Stack Developer</p>
+                <h1 class="introduction">Hello, I'm <span class="name">Betinah Onyango</span><br>
+                     From Nairobi, Kenya</h1>
             </div>
         </div>
     </div>
@@ -35,6 +38,7 @@
                 <div class="about-col-1">
                 <img src="images/aboutme.png" alt="Betinah Onyango" class="about-img">
                 </div>
+                <div class="borders">
                 <div class="about-col-2">
                     <h1 class="sub">About Me</h1>
                     <p>I am a motivated and detail-oriented Junior Full Stack Web Developer, Junior Data Analyst, and Junior Data Engineer with a strong foundation in web technologies, data analysis, and data engineering principles. I am passionate about developing robust web applications, transforming data into actionable insights, and building scalable data solutions. I am committed to continuous learning and growth, with a focus on delivering high-quality results and contributing effectively to team projects.</p>
@@ -62,6 +66,7 @@
                         <li><span class="mini-subs">August 2023 - Ongoing</span><br><span>Degree in Data Science and Analytics at Jomo Kenyatta University of Agriculture and Technology<br>Expected graduation 2027</span></li>
                         <li><span class="mini-subs">January 2025</span><br><span>Web Development Bootcamp at SheCodes Foundation</span></li>
                     </ul>
+                </div>
                 </div>
                 </div>
             </div>
@@ -95,11 +100,13 @@
                             <a href="" style="color: #f76ceb;">Learn More</a>
                     </div>
                 </div> 
+                </div>
             </div> 
-        </div> 
+        
     <!-------------------portfolio------------------->
     <div id="portfolio">
         <div class="container">
+            
             <h1 class="sub">My Portfolio</h1>
            <div class="portfolio-list">
                 <div class="portfolio-item">
@@ -130,14 +137,15 @@
                 <a href="https://github.com/betinahonyango" class="btn" target="_blank">See More</a>
             </div>
             </div>
+            
     <!-------------------contact------------------->
     <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
                 <h1 class="sub">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope" id="icons"></i> contact@example.com</p>
-                <p><i class="fa-solid fa-phone" id="icons"></i> +254 712 345678</p>
+                <p><i class="fa-solid fa-envelope" id="icons"></i> betinahonyango@gmail.com</p>
+                <p><i class="fa-solid fa-phone" id="icons"></i> +254 758 230290</p>
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/betina-onyango-627b28210/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://instagram.com/bet1nah" target="_blank"><i class="fa-brands fa-instagram"></i></a>
