@@ -17,7 +17,9 @@ body {
   background-attachment: fixed;
   height: 100vh;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 .container {
   width: 100%;
   max-width: 1200px;
@@ -63,7 +65,10 @@ nav ul li a.active {
 nav ul li a:hover::after {
   width: 100%;
 }
-
+#close-icon,
+#menu-icon {
+  display: none;
+}
 .header-content {
   margin-top: 20%;
   max-width: 600px;
@@ -370,7 +375,7 @@ nav .fas {
     font-size: 19px;
     text-align: center;
   }
-  nav .fas {
+  #close-icon, #menu-icon {
     display: block;
     font-size: 20px;
     color: #f4f4f4;
@@ -393,6 +398,9 @@ nav .fas {
     top: 25px;
     left: 25px;
     cursor: pointer;
+  }
+  .sub{
+    font-size: 40px;
   }
   .name {
     font-size: 40px;
@@ -419,6 +427,23 @@ nav .fas {
   }
   .about-col-1,
   .about-col-2 {
+    flex-basis:100%;
     align-items: center;
+  }
+  .about-col-1{
+    margin-bottom: 30px;
+  }
+  .about-col-2{
+    font-size: 14px;
+  }
+  .tab-links{
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  .contact-left{
+    flex-basis: 100%;
+  }
+  .copyright{
+    font-size: 14px;
   }
 }
