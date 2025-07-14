@@ -343,22 +343,17 @@ nav .fas {
   #header {
     background-image: url("me_photo-removebg-preview.png");
     background-size: 100%;
-    background-position: right center;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: fit-content;
-  }
-  .header-content h1 {
-    text-shadow: -1px -1px 0 #5b5a5a, 1px -1px 0 #5b5a5a, -1px 1px 0 #5b5a5a,
-      1px 1px 0 #5b5a5a;
+    height: 100vh;
   }
   .title {
     font-weight: bolder;
-    text-shadow: -1px -1px 0 #5b5a5a, 1px -1px 0 #5b5a5a, -1px 1px 0 #5b5a5a,
-      1px 1px 0 #5b5a5a;
+      text-align: left;
   }
   .header-content {
-    margin-top: 100%;
+    margin-top: -10%;
     text-align: left;
   }
 
