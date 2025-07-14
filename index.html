@@ -14,7 +14,7 @@
             <nav>
                 <img src="images/logo.png" alt="Logo" class="logo">
                 <ul id="side-menu">
-                    <li class="active"><a href="#home"><strong>Home</strong></a></li>
+                    <li class="active"><a href="#header"><strong>Home</strong></a></li>
                     <li><a href="#about"><strong>About</strong></a></li>
                     <li><a href="#services"><strong>Services</strong></a></li>
                     <li><a href="#portfolio"><strong>Portfolio</strong></a></li>
@@ -154,13 +154,15 @@
                 <a href="images/betinah-onyango-cv.pdf" class="btn btn2" target="_blank">Download CV</a>
                 </div>
                 
-                <div class="contact-right"></div>
-                <form>
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea rows="6" name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea rows="6" name="Message" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                        <div id="form-message"></div> <!-- Added for status messages -->
+                    </form>
+                </div>
             </div>
         
         </div>
