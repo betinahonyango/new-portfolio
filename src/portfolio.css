@@ -415,7 +415,7 @@ nav .fas {
   }
   .row {
     flex-direction: column;
-    align-items: left;
+    align-items: center;
   }
   .about-col-1,
   .about-col-2 {
