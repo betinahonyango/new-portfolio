@@ -10,8 +10,8 @@ body {
 }
 #header {
   width: 100vw;
-  background-image: url("me_photo-removebg-preview.png");
-  background-size: 50%;
+  background-image: url("tbd1-removebg-preview.png");
+  background-size: 60%;
   background-repeat: no-repeat;
   background-position: right center;
   background-attachment: fixed;
@@ -82,7 +82,8 @@ nav ul li a:hover::after {
   color: #b3449b;
   font-weight: bold;
 }
-<!-------------about------------------- > #about {
+<!-------------about------------------- >
+ #about {
   padding: 80px 0;
   color: #e3a9d6;
 }
@@ -147,7 +148,8 @@ nav ul li a:hover::after {
 .tab-contents.active-tab {
   display: block;
 }
-<!-------------services------------------- > #services {
+<!-------------services------------------- >
+#services {
   padding: 30px 0;
 }
 .service-list {
@@ -190,7 +192,8 @@ nav ul li a:hover::after {
   background: #ff004f;
   transform: translateY(-10px);
 }
-<!-------------------portfolio------------------- > #portfolio {
+<!-------------------portfolio------------------- > 
+#portfolio {
   padding: 50px 0;
 }
 .portfolio-list {
@@ -266,7 +269,8 @@ nav ul li a:hover::after {
   background: #ff004f;
   color: #fff;
 }
-<!-------------------contact------------------- > .contact-left {
+<!-------------------contact------------------- > 
+.contact-left {
   flex-basis: 35%;
 }
 .contact-right {
@@ -341,8 +345,8 @@ nav .fas {
     overflow-x: hidden;
   }
   #header {
-    background-image: url("me_photo-removebg-preview.png");
-    background-size: 100%;
+    background-image: url("tbd1-removebg-preview.png");
+    background-size: 130%;
     background-position: center bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -370,6 +374,15 @@ nav .fas {
     font-size: 19px;
     text-align: center;
   }
+  .about-box {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    padding-right: 20px;
+    background: #262626;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
   #close-icon, #menu-icon {
     display: block;
     font-size: 20px;
@@ -381,7 +394,9 @@ nav .fas {
     top: 0;
     right: -200px;
     width: 200px;
-    height: 100%;
+    height: 100vh;
+    height-position: fixed;
+    z-index: 1000;
     padding-top: 50px;
   }
   nav ul li {
@@ -441,4 +456,39 @@ nav .fas {
   .copyright{
     font-size: 14px;
   }
+  .layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #f4f4f4);
+  border-radius: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  transition: height 0.5s ease;
+}
+.layer h3 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.layer a {
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #f4f4f4;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+}
+.portfolio-item .layer {
+  height: 100%;
+}
 }
